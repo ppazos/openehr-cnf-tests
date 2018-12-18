@@ -115,3 +115,9 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+app {
+   server {
+      url = 'http://localhost:8080'
+   }
+}
