@@ -7,3 +7,15 @@ There is a simple Service.groovy class that is used from the Java steps. That ma
 ```
 $ mvn clean test
 ```
+
+## Some references
+
+1. Followed this guide to add groovy support for maven: http://docs.groovy-lang.org/latest/html/documentation/tools-groovyc.html
+
+2. mvn test did not run the JUnit runner, instead a TestNG tried to run, and JUnit was ignored.
+
+3. Checking the dependencies: mvn dependencies:tree saw groovy-all to have a dependency to testng.
+
+4. Also found this issue mentioning these dependencies: https://github.com/groovy/groovy-eclipse/issues/665#issuecomment-410707338
+
+5. Added exclusions for testng, tests and tests-junit5 on the POM, for the groovy-all and that made mvn test work.
