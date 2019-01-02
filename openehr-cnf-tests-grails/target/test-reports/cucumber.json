@@ -1,0 +1,548 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 719541,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:12"
+            }
+          },
+          {
+            "result": {
+              "duration": 1287717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:18"
+            }
+          },
+          {
+            "result": {
+              "duration": 7465460,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:20"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Upload an ADL 1.4-based OPT",
+        "description": "",
+        "id": "adl-1.4-opt-provisioning;upload-an-adl-1.4-based-opt",
+        "after": [
+          {
+            "result": {
+              "duration": 28305170,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:17"
+            }
+          },
+          {
+            "result": {
+              "duration": 101125,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:36"
+            }
+          },
+          {
+            "result": {
+              "duration": 443820,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:66"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 941843451,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "current count of OPTs is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 25
+                }
+              ],
+              "location": "OPT_steps.groovy:162"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 81699629,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client uploads an OPT to the I_DEFINITION_ADL14 with template_id \"encounter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "encounter",
+                  "offset": 70
+                }
+              ],
+              "location": "OPT_steps.groovy:167"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8936426,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "current count of OPTs is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 25
+                }
+              ],
+              "location": "OPT_steps.groovy:162"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 21677,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:12"
+            }
+          },
+          {
+            "result": {
+              "duration": 579418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:18"
+            }
+          },
+          {
+            "result": {
+              "duration": 233146,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:20"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Get template by template_id",
+        "description": "",
+        "id": "adl-1.4-opt-provisioning;get-template-by-template-id",
+        "after": [
+          {
+            "result": {
+              "duration": 18335631,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:17"
+            }
+          },
+          {
+            "result": {
+              "duration": 43905,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:36"
+            }
+          },
+          {
+            "result": {
+              "duration": 221903,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:66"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10494541,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "current count of OPTs is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 25
+                }
+              ],
+              "location": "OPT_steps.groovy:162"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9105034,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the client uploads an OPT to the I_DEFINITION_ADL14 with template_id \"encounter\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "encounter",
+                  "offset": 70
+                }
+              ],
+              "location": "OPT_steps.groovy:167"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37606364,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the OPT \"encounter\" is available from the I_DEFINITION_ADL14",
+            "match": {
+              "arguments": [
+                {
+                  "val": "encounter",
+                  "offset": 9
+                }
+              ],
+              "location": "OPT_steps.groovy:172"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:12"
+            }
+          },
+          {
+            "result": {
+              "duration": 220365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:18"
+            }
+          },
+          {
+            "result": {
+              "duration": 190068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:20"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "List all available Operational Templates",
+        "description": "",
+        "id": "adl-1.4-opt-provisioning;list-all-available-operational-templates",
+        "after": [
+          {
+            "result": {
+              "duration": 5219109,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:17"
+            }
+          },
+          {
+            "result": {
+              "duration": 18777,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:36"
+            }
+          },
+          {
+            "result": {
+              "duration": 171345,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:66"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12309808,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "current count of OPTs is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 25
+                }
+              ],
+              "location": "OPT_steps.groovy:162"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48070044,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the client uploads to the I_DEFINITION_ADL14 an OPT with template id in:",
+            "match": {
+              "location": "OPT_steps.groovy:209"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "encounter"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "triage"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "lab_order"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4864375,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "current count of OPTs is 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 25
+                }
+              ],
+              "location": "OPT_steps.groovy:162"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10416843,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the OPT \"encounter\" is available from the I_DEFINITION_ADL14",
+            "match": {
+              "arguments": [
+                {
+                  "val": "encounter",
+                  "offset": 9
+                }
+              ],
+              "location": "OPT_steps.groovy:172"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5423853,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the OPT \"triage\" is available from the I_DEFINITION_ADL14",
+            "match": {
+              "arguments": [
+                {
+                  "val": "triage",
+                  "offset": 9
+                }
+              ],
+              "location": "OPT_steps.groovy:172"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6810483,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the OPT \"lab_order\" is available from the I_DEFINITION_ADL14",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lab_order",
+                  "offset": 9
+                }
+              ],
+              "location": "OPT_steps.groovy:172"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "ADL 1.4 OPT Provisioning",
+    "description": "As a REST API client, I want to manage OPTs by using the\nI_DEFINITION_ADL14 so those are available for other\nservices and components",
+    "id": "adl-1.4-opt-provisioning",
+    "keyword": "Feature",
+    "uri": "OPT.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26547,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:12"
+            }
+          },
+          {
+            "result": {
+              "duration": 227157,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:18"
+            }
+          },
+          {
+            "result": {
+              "duration": 151288,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:20"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "EHRSCAPE list opts",
+        "description": "",
+        "id": "adl-1.4-opt-provisioning-for-ehrscape;ehrscape-list-opts",
+        "after": [
+          {
+            "result": {
+              "duration": 5824554,
+              "status": "passed"
+            },
+            "match": {
+              "location": "env.groovy:17"
+            }
+          },
+          {
+            "result": {
+              "duration": 25210,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_steps.groovy:36"
+            }
+          },
+          {
+            "result": {
+              "duration": 183808,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:66"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3189065065,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client lists the templates from EHRSCAPE",
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:118"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5501231,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "there are many templates in EHRSCAPE",
+            "match": {
+              "location": "OPT_ehr_scape_steps.groovy:143"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ADL 1.4 OPT Provisioning for EHRSCAPE",
+    "description": "As a REST API client, I want to manage OPTs by using the I_DEFINITION_ADL14\nso those are available for other services and components",
+    "id": "adl-1.4-opt-provisioning-for-ehrscape",
+    "keyword": "Feature",
+    "uri": "OPT_ehr_scape.feature"
+  }
+]

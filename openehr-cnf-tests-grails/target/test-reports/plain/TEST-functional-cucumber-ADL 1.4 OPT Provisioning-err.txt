@@ -1,0 +1,4 @@
+
+--Output from Upload an ADL 1.4-based OPT--
+--Output from Get template by template_id--
+--Output from List all available Operational Templates--

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="torri" id="0" name="4 OPT Provisioning for EHRSCAPE" package="ADL 1" skipped="0" tests="1" time="3.218" timestamp="2019-01-02T00:19:35">
+      <properties />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="EHRSCAPE list opts" time="3.211" />
+
+      <system-out><![CDATA[Feature: ADL 1.4 OPT Provisioning for EHRSCAPE
+  As a REST API client, I want to manage OPTs by using the I_DEFINITION_ADL14
+  so those are available for other services and components
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from EHRSCAPE list opts--A0!!!!
+A [:]
+I_DEFINITION_ADL14.list_all_opts
+/rest/openehr/v1/definition/template/adl1.4
+[[concept:Allergies, template_id:Allergies, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-04-04T13:52:01.546+02:00], [concept:Clinical report, template_id:Clinical Report, archetype_id:openEHR-EHR-COMPOSITION.report.v1, created_timestamp:2014-04-04T13:52:01.595+02:00], [concept:Digiscope, template_id:Digiscope, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-12-08T08:51:00.08+01:00], [concept:Encounter, template_id:Encounter, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2018-06-11T10:18:21.967+02:00], [concept:GDL Result, template_id:GDL Result, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-05-08T17:45:40.48+02:00], [concept:Laboratory report, template_id:Laboratory Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.637+02:00], [concept:Medical diagnosis, template_id:Medical Diagnosis, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-06-16T15:04:42.516+02:00], [concept:Medications, template_id:Medications, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-04-04T13:52:01.727+02:00], [concept:Parental Growth, template_id:Parental Growth, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-11-10T09:02:39.39+01:00], [concept:Radiology imaging report, template_id:Radiology Imaging Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.772+02:00], [concept:Vital Signs, template_id:Vital Signs, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2015-10-26T08:36:16.095+01:00]]
+B [opts:[[concept:Allergies, template_id:Allergies, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-04-04T13:52:01.546+02:00], [concept:Clinical report, template_id:Clinical Report, archetype_id:openEHR-EHR-COMPOSITION.report.v1, created_timestamp:2014-04-04T13:52:01.595+02:00], [concept:Digiscope, template_id:Digiscope, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-12-08T08:51:00.08+01:00], [concept:Encounter, template_id:Encounter, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2018-06-11T10:18:21.967+02:00], [concept:GDL Result, template_id:GDL Result, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-05-08T17:45:40.48+02:00], [concept:Laboratory report, template_id:Laboratory Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.637+02:00], [concept:Medical diagnosis, template_id:Medical Diagnosis, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-06-16T15:04:42.516+02:00], [concept:Medications, template_id:Medications, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-04-04T13:52:01.727+02:00], [concept:Parental Growth, template_id:Parental Growth, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-11-10T09:02:39.39+01:00], [concept:Radiology imaging report, template_id:Radiology Imaging Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.772+02:00], [concept:Vital Signs, template_id:Vital Signs, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2015-10-26T08:36:16.095+01:00]]]
+AFTER2
+
+  Scenario: EHRSCAPE list opts                        # OPT_ehr_scape.feature:5
+    When the client lists the templates from EHRSCAPE # OPT_ehr_scape_steps.groovy:118
+    Then there are many templates in EHRSCAPE         # OPT_ehr_scape_steps.groovy:143
+]]></system-out>
+
+      <system-err><![CDATA[
+--Output from EHRSCAPE list opts--]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="torri" id="1" name="4 OPT Provisioning" package="ADL 1" skipped="0" tests="3" time="1.392" timestamp="2019-01-02T00:19:34">
+      <properties />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Upload an ADL 1.4-based OPT" time="1.094" />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="Get template by template_id" time="0.101" />
+
+      <testcase classname="grails.plugin.cucumber.CucumberTest" name="List all available Operational Templates" time="0.108" />
+
+      <system-out><![CDATA[Feature: ADL 1.4 OPT Provisioning
+  As a REST API client, I want to manage OPTs by using the
+  I_DEFINITION_ADL14 so those are available for other
+  services and components
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from Upload an ADL 1.4-based OPT--AFTER2
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from Get template by template_id--
+  Scenario: Upload an ADL 1.4-based OPT                                                   # OPT.feature:6
+    Given current count of OPTs is 0                                                      # OPT_steps.groovy:162
+    When the client uploads an OPT to the I_DEFINITION_ADL14 with template_id "encounter" # OPT_steps.groovy:167
+    Then current count of OPTs is 1                                                       # OPT_steps.groovy:162
+AFTER2
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from List all available Operational Templates--
+  Scenario: Get template by template_id                                                   # OPT.feature:11
+    Given current count of OPTs is 0                                                      # OPT_steps.groovy:162
+    When the client uploads an OPT to the I_DEFINITION_ADL14 with template_id "encounter" # OPT_steps.groovy:167
+    Then the OPT "encounter" is available from the I_DEFINITION_ADL14                     # OPT_steps.groovy:172
+AFTER2
+
+  Scenario: List all available Operational Templates                              # OPT.feature:16
+    Given current count of OPTs is 0                                              # OPT_steps.groovy:162
+    When the client uploads to the I_DEFINITION_ADL14 an OPT with template id in: # OPT_steps.groovy:209
+    Then current count of OPTs is 3                                               # OPT_steps.groovy:162
+    And the OPT "encounter" is available from the I_DEFINITION_ADL14              # OPT_steps.groovy:172
+    And the OPT "triage" is available from the I_DEFINITION_ADL14                 # OPT_steps.groovy:172
+    And the OPT "lab_order" is available from the I_DEFINITION_ADL14              # OPT_steps.groovy:172
+]]></system-out>
+
+      <system-err><![CDATA[
+--Output from Upload an ADL 1.4-based OPT--
+--Output from Get template by template_id--
+--Output from List all available Operational Templates--]]></system-err>
+
+  </testsuite>
+</testsuites>

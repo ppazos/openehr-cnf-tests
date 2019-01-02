@@ -1,0 +1,229 @@
+<!DOCTYPE html><html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+                    Test - 4 OPT Provisioning for EHRSCAPE</title>
+<link rel="shortcut icon" href="http://grails.org/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" title="Style" href="../stylesheet.css">
+</head>
+<body>
+<div class="container container_8" id="report">
+<div class="grid_6">
+<a title="Home" href="../index.html">
+<div class="grailslogo"></div>
+</a>
+<h1>4 OPT Provisioning for EHRSCAPE</h1>
+<h2>Package: ADL 1</h2>
+</div>
+<div class="grid_2">
+<nav id="navigationlinks">
+<p>
+<a href="../failed.html">
+                    Tests with failure and errors
+                </a>
+</p>
+<p>
+<a href="../index.html">
+                    Package summary
+                </a>
+</p>
+<p>
+<a href="../all.html">
+                    Show all tests
+                </a>
+</p>
+</nav>
+</div>
+<div class="clear"></div>
+<div class="testsuite success">
+<div class="header">
+<h2>4 OPT Provisioning for EHRSCAPE</h2>
+<h3>
+                        A single test executed
+                    
+                        without a single error or failure!
+                    </h3>
+</div>
+<div class="testcase clearfix success grid_8 alpha omega" data-name="EHRSCAPE list opts">
+<div class="grid_3 alpha">
+<p>
+<span class="icon success"></span><b class="testname message success">EHRSCAPE list opts</b>
+</p>
+<p class="summary">Executed in 3.211 seconds.</p>
+</div>
+<div class="grid_5 omega outputinfo"></div>
+<div class="clear"></div>
+</div>
+<div class="clearfix output footer">
+<div class="sysout">
+<h2>Standard output</h2>
+<pre class="stdout">Feature: ADL 1.4 OPT Provisioning for EHRSCAPE
+  As a REST API client, I want to manage OPTs by using the I_DEFINITION_ADL14
+  so those are available for other services and components
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from EHRSCAPE list opts--A0!!!!
+A [:]
+I_DEFINITION_ADL14.list_all_opts
+/rest/openehr/v1/definition/template/adl1.4
+[[concept:Allergies, template_id:Allergies, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-04-04T13:52:01.546+02:00], [concept:Clinical report, template_id:Clinical Report, archetype_id:openEHR-EHR-COMPOSITION.report.v1, created_timestamp:2014-04-04T13:52:01.595+02:00], [concept:Digiscope, template_id:Digiscope, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-12-08T08:51:00.08+01:00], [concept:Encounter, template_id:Encounter, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2018-06-11T10:18:21.967+02:00], [concept:GDL Result, template_id:GDL Result, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-05-08T17:45:40.48+02:00], [concept:Laboratory report, template_id:Laboratory Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.637+02:00], [concept:Medical diagnosis, template_id:Medical Diagnosis, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-06-16T15:04:42.516+02:00], [concept:Medications, template_id:Medications, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-04-04T13:52:01.727+02:00], [concept:Parental Growth, template_id:Parental Growth, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-11-10T09:02:39.39+01:00], [concept:Radiology imaging report, template_id:Radiology Imaging Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.772+02:00], [concept:Vital Signs, template_id:Vital Signs, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2015-10-26T08:36:16.095+01:00]]
+B [opts:[[concept:Allergies, template_id:Allergies, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-04-04T13:52:01.546+02:00], [concept:Clinical report, template_id:Clinical Report, archetype_id:openEHR-EHR-COMPOSITION.report.v1, created_timestamp:2014-04-04T13:52:01.595+02:00], [concept:Digiscope, template_id:Digiscope, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-12-08T08:51:00.08+01:00], [concept:Encounter, template_id:Encounter, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2018-06-11T10:18:21.967+02:00], [concept:GDL Result, template_id:GDL Result, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-05-08T17:45:40.48+02:00], [concept:Laboratory report, template_id:Laboratory Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.637+02:00], [concept:Medical diagnosis, template_id:Medical Diagnosis, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-06-16T15:04:42.516+02:00], [concept:Medications, template_id:Medications, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2014-04-04T13:52:01.727+02:00], [concept:Parental Growth, template_id:Parental Growth, archetype_id:openEHR-EHR-COMPOSITION.summary.v1, created_timestamp:2014-11-10T09:02:39.39+01:00], [concept:Radiology imaging report, template_id:Radiology Imaging Report, archetype_id:openEHR-EHR-COMPOSITION.report-mnd.v1, created_timestamp:2014-04-04T13:52:01.772+02:00], [concept:Vital Signs, template_id:Vital Signs, archetype_id:openEHR-EHR-COMPOSITION.encounter.v1, created_timestamp:2015-10-26T08:36:16.095+01:00]]]
+AFTER2
+
+  Scenario: EHRSCAPE list opts                        # OPT_ehr_scape.feature:5
+    When the client lists the templates from EHRSCAPE # OPT_ehr_scape_steps.groovy:118
+    Then there are many templates in EHRSCAPE         # OPT_ehr_scape_steps.groovy:143
+</pre>
+</div>
+<div class="syserr">
+<h2>System error</h2>
+<pre class="syserr">
+--Output from EHRSCAPE list opts--</pre>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+<!--
+            Parses JUnit output and associates it with the corresponding test case
+        -->
+<script language="javascript">
+
+
+/**
+ * The JUnit report format is incredibly stuipd in the
+ * sense that it accumulates output from all test methods
+ * into a single xml node.
+ */
+(function() {
+
+    var outputElements = findOutputElements();
+    for (var i in outputElements) {
+        var outputElement = outputElements[i];
+        var textOutput = outputElement.element.firstChild.nodeValue;
+        var header = outputElement.getHeader();
+        appendTestMethodOutput(textOutput, header);
+    }
+
+    function findOutputElements() {
+        var outputElements = [];
+        var preElements = document.getElementsByTagName("pre");
+        for (var i in preElements) {
+            var preElement = preElements[i];
+            var className = preElement.className || "";
+            if (className.indexOf("stdout") >= 0) {
+                var outputElement = new OutputElement(preElement, "output");
+                outputElements.push(outputElement);
+            } else if (className.indexOf("syserr") >= 0) {
+                var outputElement = new OutputElement(preElement, "error");
+                outputElements.push(outputElement);
+            }
+        }
+
+        return outputElements;
+    }
+
+    function OutputElement(element, type) {
+        this.element = element;
+        this.type = type;
+
+        this.getHeader = function() {
+            if (type === "output") {
+                return "System output";
+            } else if ("error") {
+                return "System error";
+            }
+        }
+    }
+
+    function appendTestMethodOutput(text, header) {
+        var testOutput = new TestMethodOutput(header);
+
+        var lines = text.split(/\r\n|\r|\n/);
+        for (var i in lines) {
+            var line = lines[i];
+            var matches = line.match(/^--Output from (.*)--$/);
+            if (matches !== null && matches.length == 2) {
+                testOutput.flushToDom();
+                testOutput.testName = matches[1];
+            } else {
+                testOutput.addLine(line);
+            }
+        }
+
+        testOutput.flushToDom();
+    }
+
+    function TestMethodOutput(header) {
+        this.header = header;
+        this.testName = undefined;
+        this.buffer = "";
+
+        this.addLine = function(line) {
+            this.buffer += line + "\n";
+        }
+
+        this.flushToDom = function() {
+            if (this.testName !== undefined) {
+                var domNode = getTestcaseElementByName(this.testName);
+                if (domNode !== undefined && trimString(this.buffer).length > 0) {
+                    this.appendTo(domNode);
+                }
+
+                this.reset();
+            }
+        }
+
+        this.appendTo = function(domNode) {
+            var node = document.createElement("div");
+            node.innerHTML = '<p><b class="message">' + header + '</b></p>';
+
+            var preNode = document.createElement("pre");
+            preNode.appendChild(document.createTextNode(this.buffer));
+            node.appendChild(preNode);
+
+            var outputContainer = findElementByTagClassAndParent("div", "outputinfo", domNode);
+            outputContainer.appendChild(node);
+        }
+
+        this.reset = function() {
+            this.methodName = undefined;
+            this.buffer = "";
+        }
+    }
+
+    function getTestcaseElementByName(name) {
+        var divElements = document.getElementsByTagName("div");
+        var elementCount = divElements.length;
+        for (var i=0; i<elementCount; i++) {
+            var el = divElements[i];
+            if (el.getAttribute("data-name") === name) {
+                return el;
+            }
+        }
+    }
+
+    function findElementByTagClassAndParent(tagName, className, parentNode) {
+        var elements = parentNode.getElementsByTagName(tagName);
+        for (var i in elements) {
+            var element = elements[i];
+
+            // Not 100% correct, but good enough here
+            if (element.className !== undefined && element.className.indexOf(className) >= 0) {
+                return element;
+            }
+        }
+    }
+
+    function trimString(str) {
+        return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+})();
+
+        </script>
+</body>
+</html>

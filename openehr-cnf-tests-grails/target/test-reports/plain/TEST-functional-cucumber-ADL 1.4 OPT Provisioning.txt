@@ -1,0 +1,50 @@
+Testsuite: ADL 1.4 OPT Provisioning
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.392 sec
+------------- Standard Output ---------------
+Feature: ADL 1.4 OPT Provisioning
+  As a REST API client, I want to manage OPTs by using the
+  I_DEFINITION_ADL14 so those are available for other
+  services and components
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from Upload an ADL 1.4-based OPT--AFTER2
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from Get template by template_id--
+  Scenario: Upload an ADL 1.4-based OPT                                                   # OPT.feature:6
+    Given current count of OPTs is 0                                                      # OPT_steps.groovy:162
+    When the client uploads an OPT to the I_DEFINITION_ADL14 with template_id "encounter" # OPT_steps.groovy:167
+    Then current count of OPTs is 1                                                       # OPT_steps.groovy:162
+AFTER2
+Before OPT_steps
+http://localhost:8080
+Before OPT_ehr_scape_steps
+
+--Output from List all available Operational Templates--
+  Scenario: Get template by template_id                                                   # OPT.feature:11
+    Given current count of OPTs is 0                                                      # OPT_steps.groovy:162
+    When the client uploads an OPT to the I_DEFINITION_ADL14 with template_id "encounter" # OPT_steps.groovy:167
+    Then the OPT "encounter" is available from the I_DEFINITION_ADL14                     # OPT_steps.groovy:172
+AFTER2
+
+  Scenario: List all available Operational Templates                              # OPT.feature:16
+    Given current count of OPTs is 0                                              # OPT_steps.groovy:162
+    When the client uploads to the I_DEFINITION_ADL14 an OPT with template id in: # OPT_steps.groovy:209
+    Then current count of OPTs is 3                                               # OPT_steps.groovy:162
+    And the OPT "encounter" is available from the I_DEFINITION_ADL14              # OPT_steps.groovy:172
+    And the OPT "triage" is available from the I_DEFINITION_ADL14                 # OPT_steps.groovy:172
+    And the OPT "lab_order" is available from the I_DEFINITION_ADL14              # OPT_steps.groovy:172
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+
+--Output from Upload an ADL 1.4-based OPT--
+--Output from Get template by template_id--
+--Output from List all available Operational Templates--------------- ---------------- ---------------
+
+Testcase: Upload an ADL 1.4-based OPT took 1.094 sec
+Testcase: Get template by template_id took 0.101 sec
+Testcase: List all available Operational Templates took 0.108 sec

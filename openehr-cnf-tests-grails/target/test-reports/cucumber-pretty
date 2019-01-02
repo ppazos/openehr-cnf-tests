@@ -1,0 +1,29 @@
+Feature: ADL 1.4 OPT Provisioning
+  As a REST API client, I want to manage OPTs by using the
+  I_DEFINITION_ADL14 so those are available for other
+  services and components
+
+  Scenario: Upload an ADL 1.4-based OPT                                                   [90m# OPT.feature:6[0m
+    [32mGiven [0m[32mcurrent count of OPTs is [0m[32m[1m0[0m                                                      [90m# OPT_steps.groovy:162[0m
+    [32mWhen [0m[32mthe client uploads an OPT to the I_DEFINITION_ADL14 with template_id "[0m[32m[1mencounter[0m[32m"[0m [90m# OPT_steps.groovy:167[0m
+    [32mThen [0m[32mcurrent count of OPTs is [0m[32m[1m1[0m                                                       [90m# OPT_steps.groovy:162[0m
+
+  Scenario: Get template by template_id                                                   [90m# OPT.feature:11[0m
+    [32mGiven [0m[32mcurrent count of OPTs is [0m[32m[1m0[0m                                                      [90m# OPT_steps.groovy:162[0m
+    [32mWhen [0m[32mthe client uploads an OPT to the I_DEFINITION_ADL14 with template_id "[0m[32m[1mencounter[0m[32m"[0m [90m# OPT_steps.groovy:167[0m
+    [32mThen [0m[32mthe OPT "[0m[32m[1mencounter[0m[32m" is available from the I_DEFINITION_ADL14[0m                     [90m# OPT_steps.groovy:172[0m
+
+  Scenario: List all available Operational Templates                              [90m# OPT.feature:16[0m
+    [32mGiven [0m[32mcurrent count of OPTs is [0m[32m[1m0[0m                                              [90m# OPT_steps.groovy:162[0m
+    [32mWhen [0m[32mthe client uploads to the I_DEFINITION_ADL14 an OPT with template id in:[0m [90m# OPT_steps.groovy:209[0m
+    [32mThen [0m[32mcurrent count of OPTs is [0m[32m[1m3[0m                                               [90m# OPT_steps.groovy:162[0m
+    [32mAnd [0m[32mthe OPT "[0m[32m[1mencounter[0m[32m" is available from the I_DEFINITION_ADL14[0m              [90m# OPT_steps.groovy:172[0m
+    [32mAnd [0m[32mthe OPT "[0m[32m[1mtriage[0m[32m" is available from the I_DEFINITION_ADL14[0m                 [90m# OPT_steps.groovy:172[0m
+    [32mAnd [0m[32mthe OPT "[0m[32m[1mlab_order[0m[32m" is available from the I_DEFINITION_ADL14[0m              [90m# OPT_steps.groovy:172[0m
+Feature: ADL 1.4 OPT Provisioning for EHRSCAPE
+  As a REST API client, I want to manage OPTs by using the I_DEFINITION_ADL14
+  so those are available for other services and components
+
+  Scenario: EHRSCAPE list opts                        [90m# OPT_ehr_scape.feature:5[0m
+    [32mWhen [0m[32mthe client lists the templates from EHRSCAPE[0m [90m# OPT_ehr_scape_steps.groovy:118[0m
+    [32mThen [0m[32mthere are many templates in EHRSCAPE[0m         [90m# OPT_ehr_scape_steps.groovy:143[0m
